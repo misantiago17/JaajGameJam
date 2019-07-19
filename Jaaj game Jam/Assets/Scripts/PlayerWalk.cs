@@ -17,7 +17,7 @@ public class PlayerWalk : MonoBehaviour
     void Update()
     {
         // Anda para a esquerda
-        if (Input.GetKey(KeyCode.A)) {
+        if (Input.GetButton("Left")) {
 
             // Limita a velocidade
             if (PlayerRB.velocity.x > -PlayervelocityLimit) {
@@ -25,7 +25,7 @@ public class PlayerWalk : MonoBehaviour
             }
 
         // Anda para a direita
-        } else if (Input.GetKey(KeyCode.D)) {
+        } else if (Input.GetButton("Right")) {
 
             // Limita a velocidade
             if (PlayerRB.velocity.x < PlayervelocityLimit) {
