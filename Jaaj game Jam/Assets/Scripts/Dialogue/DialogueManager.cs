@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 
 public class DialogueManager: MonoBehaviour
 {
-    /*private static DialogueManager instance;
+    private static DialogueManager instance;
 
     private Queue<string> sentences;
     private Queue<string> speakerName;
@@ -43,7 +43,7 @@ public class DialogueManager: MonoBehaviour
     private void Update() {
 
         if (ConversationStarted) {
-            if ((Input.GetKeyDown(KeyCode.Return) || Input.GetMouseButtonDown(0)) && canDisplayNextSentence) {
+            if ((Input.GetKeyDown(KeyCode.Return) || Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.E)) && canDisplayNextSentence) {
                 DisplayNextSentence();
 
             } else if (Input.GetKeyDown(KeyCode.Escape)) {
@@ -101,7 +101,7 @@ public class DialogueManager: MonoBehaviour
         dialogueOptions.transform.GetChild(currentSelectedPrompt).GetChild(0).GetComponent<Text>().fontStyle = FontStyle.Bold;
     }
 
-
+    // Se tem 1 prompt ele ignora o prompt e mostra o diálogo
     public void SelectPrompt(List<DialoguePrompt> _dialoguePrompts, EndOfDialogue endAction, string HeaderPrompt) {
 
         nameText.transform.parent.gameObject.SetActive(false);
@@ -182,5 +182,5 @@ public class DialogueManager: MonoBehaviour
 
         yield return new WaitForSeconds(DelayBetweenSentencesValue);
         canDisplayNextSentence = true;
-    }*/
+    }
 }
