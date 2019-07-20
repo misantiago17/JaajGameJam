@@ -466,6 +466,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PromptHeader: 
   DialoguePrompts: []
+  canStartDialogAgain: 1
 --- !u!61 &695766244
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -843,6 +844,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30f309f6d34c33748aa173255961e0f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Unlocked: 0
 --- !u!61 &997135191
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1239,6 +1241,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1431159467}
   - component: {fileID: 1431159469}
+  - component: {fileID: 1431159470}
   - component: {fileID: 1431159468}
   m_Layer: 0
   m_Name: Object 1
@@ -1276,12 +1279,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PromptHeader: A
   DialoguePrompts:
-  - DialogPrompt: "Funk Pesad\xE3o"
+  - DialogPrompt: A
     dialogue:
     - SpeakerName: "Caixinha de M\xFAsica"
       Sentence: TUDUM TUM TUDUM TUM
     - SpeakerName: "Caixinha de M\xFAsica"
       Sentence: SOU EU BOLA DE FOGO
+  canStartDialogAgain: 1
 --- !u!61 &1431159469
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1308,6 +1312,28 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1431159470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1431159466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 199478e0a98bbbc4a9dec5af5048845f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectoCondicional: {fileID: 997135188}
+  PromptHeader: A
+  DialoguePrompts:
+  - DialogPrompt: A
+    dialogue:
+    - SpeakerName: "Caixinha de M\xFAsica"
+      Sentence: "Ent\xE3o quer dizer que voc\xEA abriu a porta?"
+    - SpeakerName: "Caixinha de M\xFAsica"
+      Sentence: Espertinho
+  canStartDialogAgain: 1
 --- !u!1 &1737700981
 GameObject:
   m_ObjectHideFlags: 0

@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public delegate void EndOfDialogue();
-
-public class ActionTalk : ActionTrigger
+public class ActionTalkCondicional: ActionTrigger
 {
     // --- Public Variables --- //
+
+    public GameObject ObjectoCondicional;
+
     [TextArea(1, 3)] public string PromptHeader;
     public List<DialoguePrompt> DialoguePrompts = new List<DialoguePrompt>();
 
@@ -23,7 +24,7 @@ public class ActionTalk : ActionTrigger
 
         function = EndAction;
 
-        if (canStartDialogAgain) {
+        if (canStartDialogAgain && ObjectoCondicional.GetComponent<ActionUnlock>().Unlocked) {
             DialogueManager.Instance.SelectPrompt(DialoguePrompts, function, PromptHeader);
             startDialogue = true;
             canStartDialogAgain = false;
@@ -36,6 +37,7 @@ public class ActionTalk : ActionTrigger
         base.EndAction();
 
         startDialogue = false;
+        ObjectoCondicional.GetComponent<ActionUnlock>().Unlocked = false;
         StartCoroutine(WaitUntilDialogIsFinished());
     }
 
