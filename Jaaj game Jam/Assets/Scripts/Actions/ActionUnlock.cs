@@ -14,13 +14,13 @@ public class ActionUnlock : MonoBehaviour
     // Start is called before the first frame update
     void Update()
     {
-        if (Condicao) {
+        /*if (Condicao) {
             if (Condicao.GetComponentInChildren<ActionUnlock>(true).Unlocked && !ActivatedAction)
             {
                 UnlockItem();
                 ActivatedAction = true;
             }
-        }
+        }*/
     }
 
     public void UnlockItem()

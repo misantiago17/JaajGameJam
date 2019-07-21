@@ -34,6 +34,29 @@ public class PlayerWalk : MonoBehaviour
 
         }
 
+        // Anda para a cima
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+        {
+
+            // Limita a velocidade
+            if (PlayerRB.velocity.y > -PlayervelocityLimit)
+            {
+                PlayerRB.AddForce(PlayerVelocity * Vector2.up);
+            }
+
+            // Anda para a baixo
+        }
+        else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
+        {
+
+            // Limita a velocidade
+            if (PlayerRB.velocity.y < PlayervelocityLimit)
+            {
+                PlayerRB.AddForce(PlayerVelocity * Vector2.down);
+            }
+
+        }
+
 
     }
 }

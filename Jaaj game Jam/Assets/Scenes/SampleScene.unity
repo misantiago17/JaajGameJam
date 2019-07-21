@@ -1382,5 +1382,35 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8673047234291678527, guid: f9dacdc4cb85c470082b7042899a6ba4,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: e60a13956f27f4b7c8f673164a43c4a0, type: 2}
+    - target: {fileID: 8673047234291678522, guid: f9dacdc4cb85c470082b7042899a6ba4,
+        type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8673047234291678522, guid: f9dacdc4cb85c470082b7042899a6ba4,
+        type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8673047234291678522, guid: f9dacdc4cb85c470082b7042899a6ba4,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8673047234291678522, guid: f9dacdc4cb85c470082b7042899a6ba4,
+        type: 3}
+      propertyPath: m_UseAutoMass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8673047234291678522, guid: f9dacdc4cb85c470082b7042899a6ba4,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9dacdc4cb85c470082b7042899a6ba4, type: 3}

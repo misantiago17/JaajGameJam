@@ -39,8 +39,9 @@ public class ActionTalkCondicional: ActionTrigger
         if (unlock)
             this.GetComponent<ActionUnlock>().UnlockItem();
 
-        if (choice) { startDialogue = false;
+        if (choice) {
             this.GetComponent<ActionTalkChoices>().DoAction();
+            EndAction();
         }
         else
             EndAction();
@@ -49,7 +50,7 @@ public class ActionTalkCondicional: ActionTrigger
     public override void EndAction() {
         base.EndAction();
 
-
+        startDialogue = false;
         ObjectoCondicional.GetComponent<ActionUnlock>().Unlocked = false;
         StartCoroutine(WaitUntilDialogIsFinished());
     }
