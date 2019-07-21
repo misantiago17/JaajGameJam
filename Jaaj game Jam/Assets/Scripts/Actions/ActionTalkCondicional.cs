@@ -22,7 +22,7 @@ public class ActionTalkCondicional: ActionTrigger
     public override void DoAction() {
         base.DoAction();
 
-        function = EndAction;
+        function = EndDialogue;
 
         if (canStartDialogAgain && ObjectoCondicional.GetComponent<ActionUnlock>().Unlocked) {
             DialogueManager.Instance.SelectPrompt(DialoguePrompts, function, PromptHeader);
@@ -33,10 +33,23 @@ public class ActionTalkCondicional: ActionTrigger
         }
     }
 
+    public void EndDialogue(bool unlock, bool choice, int choiceID)
+    {
+
+        if (unlock)
+            this.GetComponent<ActionUnlock>().UnlockItem();
+
+        if (choice) { startDialogue = false;
+            this.GetComponent<ActionTalkChoices>().DoAction();
+        }
+        else
+            EndAction();
+    }
+
     public override void EndAction() {
         base.EndAction();
 
-        startDialogue = false;
+
         ObjectoCondicional.GetComponent<ActionUnlock>().Unlocked = false;
         StartCoroutine(WaitUntilDialogIsFinished());
     }

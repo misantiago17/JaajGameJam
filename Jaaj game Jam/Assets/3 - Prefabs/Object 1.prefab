@@ -75,7 +75,10 @@ MonoBehaviour:
   ObjectoCondicional: {fileID: 0}
   PromptHeader: A
   DialoguePrompts:
-  - DialogPrompt: A
+  - Unlock: 0
+    triggerChoices: 0
+    choicesID: 0
+    DialogPrompt: A
     dialogue:
     - SpeakerName: "Caixinha de M\xFAsica"
       Sentence: "Ent\xE3o quer dizer que voc\xEA abriu a porta?"
@@ -96,7 +99,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PromptHeader: A
   DialoguePrompts:
-  - DialogPrompt: A
+  - Unlock: 0
+    triggerChoices: 0
+    choicesID: 0
+    DialogPrompt: A
     dialogue:
     - SpeakerName: "Caixinha de M\xFAsica"
       Sentence: TUDUM TUM TUDUM TUM

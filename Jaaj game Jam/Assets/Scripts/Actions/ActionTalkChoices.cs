@@ -22,7 +22,7 @@ public class ActionTalkChoices : ActionTrigger
     {
         base.DoAction();
 
-        function = EndAction;
+        function = EndDialogue;
 
         if (canStartDialogAgain)
         {
@@ -36,11 +36,27 @@ public class ActionTalkChoices : ActionTrigger
         }
     }
 
+    public void EndDialogue(bool unlock, bool choice, int choiceID)
+    {
+
+        if (unlock)
+            this.GetComponent<ActionUnlock>().UnlockItem();
+
+        if (choice)
+        {
+            startDialogue = false;
+            this.GetComponent<ActionTalkChoices>().DoAction();
+
+        }            
+        //else
+            EndAction();
+    }
+
     public override void EndAction()
     {
         base.EndAction();
 
-        startDialogue = false;
+
         StartCoroutine(WaitUntilDialogIsFinished());
     }
 

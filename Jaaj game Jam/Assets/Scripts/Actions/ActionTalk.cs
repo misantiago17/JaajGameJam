@@ -6,9 +6,6 @@ public delegate void EndOfDialogue(bool unlock, bool choice, int choiceID);
 
 public class ActionTalk : ActionTrigger
 {
-    // talvez dialogos unlocke coisas se feitos do jeito certo
-    // depende do caminho que a conversa vai tomar
-
     // --- Public Variables --- //
     [TextArea(1, 3)] public string PromptHeader;
     public List<DialoguePrompt> DialoguePrompts = new List<DialoguePrompt>();
@@ -41,8 +38,11 @@ public class ActionTalk : ActionTrigger
             this.GetComponent<ActionUnlock>().UnlockItem();
 
         if (choice)
+        {
+            Debug.Log("Sou uma escolha");
+            startDialogue = false;
             this.GetComponent<ActionTalkChoices>().DoAction();
-        else 
+        } else
             EndAction();
     }
 
@@ -50,7 +50,7 @@ public class ActionTalk : ActionTrigger
     public override void EndAction() {
         base.EndAction();
 
-        startDialogue = false;
+
         StartCoroutine(WaitUntilDialogIsFinished());
     }
 
