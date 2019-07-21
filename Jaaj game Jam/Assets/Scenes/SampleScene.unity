@@ -544,6 +544,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1266244723, guid: 6e7dc5402c29a364dae1039af2a26349, type: 3}
+      propertyPath: nameText
+      value: 
+      objectReference: {fileID: 1019771805}
+    - target: {fileID: 1266244723, guid: 6e7dc5402c29a364dae1039af2a26349, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 1231172753}
+    - target: {fileID: 1266244723, guid: 6e7dc5402c29a364dae1039af2a26349, type: 3}
+      propertyPath: dialogueHeader
+      value: 
+      objectReference: {fileID: 1276150707}
+    - target: {fileID: 1266244723, guid: 6e7dc5402c29a364dae1039af2a26349, type: 3}
+      propertyPath: dialogueOptions
+      value: 
+      objectReference: {fileID: 730030258}
+    - target: {fileID: 1266244724, guid: 6e7dc5402c29a364dae1039af2a26349, type: 3}
+      propertyPath: checklistBase
+      value: 
+      objectReference: {fileID: 1691953183}
+    - target: {fileID: 1266244724, guid: 6e7dc5402c29a364dae1039af2a26349, type: 3}
+      propertyPath: checklistTextsHolders
+      value: 
+      objectReference: {fileID: 1691953182}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e7dc5402c29a364dae1039af2a26349, type: 3}
 --- !u!1 &903951607
@@ -621,59 +645,6 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1266244722 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4722114225479456031, guid: 6e7dc5402c29a364dae1039af2a26349,
-    type: 3}
-  m_PrefabInstance: {fileID: 869447826}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1266244723
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1266244722}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58ff5f54ba5acbe4aa825b7946b1c371, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DialogueSelection: 0
-  ConversationStarted: 0
-  nameText: {fileID: 1019771805}
-  dialogueText: {fileID: 1231172753}
-  dialogueHeader: {fileID: 1276150707}
-  dialogueOptions: {fileID: 730030258}
-  DelayBetweenSentencesValue: 0.3
---- !u!114 &1266244724
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1266244722}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad7f045973713aa43bf0f34565391f82, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  checklistBase: {fileID: 1691953183}
-  checklistTextsHolders: {fileID: 1691953182}
---- !u!114 &1266244725
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1266244722}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 592d91ef7e3b544b4a98c0b6682b1ec1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  texts:
-  - Pegue a chave
 --- !u!114 &1276150707 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9121371576589109376, guid: aea41e4ac7bd981419e61003ffa9ce23,
@@ -808,21 +779,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4931157146040303836, guid: ae67fa522c3f8b2498b0bd3a8cfd4aa1,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0.00012207031
-      objectReference: {fileID: 0}
-    - target: {fileID: 1351332897195683421, guid: ae67fa522c3f8b2498b0bd3a8cfd4aa1,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6135458080883955116, guid: ae67fa522c3f8b2498b0bd3a8cfd4aa1,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae67fa522c3f8b2498b0bd3a8cfd4aa1, type: 3}
