@@ -38,6 +38,8 @@ public class DialogueManager: MonoBehaviour
         instance = this;
         sentences = new Queue<string>();
         speakerName = new Queue<string>();
+
+        this.GetComponent<AddItemCheckList>().AddItemInCheckList();
     }
 
     private void Update() {
@@ -47,7 +49,7 @@ public class DialogueManager: MonoBehaviour
                 DisplayNextSentence();
 
             } else if (Input.GetKeyDown(KeyCode.Escape)) {
-                EndDialog();
+                EndDialog(false, false, 0);
             }
         }
 
@@ -84,7 +86,7 @@ public class DialogueManager: MonoBehaviour
             } else if (Input.GetKeyDown(KeyCode.Escape)) {
                 DialogueSelection = false;
                 dialogueOptions.SetActiveRecursively(false);
-                EndDialog();
+                EndDialog(false,false,0);
             }
         }
 
@@ -156,7 +158,8 @@ public class DialogueManager: MonoBehaviour
     private void DisplayNextSentence() {
 
         if (sentences.Count == 0) {
-            EndDialog();
+        
+            EndDialog(dialoguePrompts[currentSelectedPrompt].Unlock, dialoguePrompts[currentSelectedPrompt].triggerChoices, dialoguePrompts[currentSelectedPrompt].choicesID);
             return;
         }
 
@@ -172,10 +175,10 @@ public class DialogueManager: MonoBehaviour
 
     }
 
-    private void EndDialog() {
+    private void EndDialog(bool unlock, bool choice, int choiceID) {
         nameText.transform.parent.parent.gameObject.SetActive(false);
         ConversationStarted = false;
-        EndDialogue();
+        EndDialogue(unlock,choice, choiceID);
     }
 
     IEnumerator DelayBetweenSentences() {

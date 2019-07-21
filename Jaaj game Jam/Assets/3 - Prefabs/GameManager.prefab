@@ -9,6 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3685277574916284048}
+  - component: {fileID: 1266244723}
+  - component: {fileID: 1266244724}
+  - component: {fileID: 1266244725}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -30,3 +33,50 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1266244723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4722114225479456031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58ff5f54ba5acbe4aa825b7946b1c371, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueSelection: 0
+  ConversationStarted: 0
+  nameText: {fileID: 0}
+  dialogueText: {fileID: 0}
+  dialogueHeader: {fileID: 0}
+  dialogueOptions: {fileID: 0}
+  DelayBetweenSentencesValue: 0.3
+--- !u!114 &1266244724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4722114225479456031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad7f045973713aa43bf0f34565391f82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checklistBase: {fileID: 0}
+  checklistTextsHolders: {fileID: 0}
+--- !u!114 &1266244725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4722114225479456031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 592d91ef7e3b544b4a98c0b6682b1ec1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texts:
+  - Pegue a chave

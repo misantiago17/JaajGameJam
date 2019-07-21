@@ -2,10 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public delegate void EndOfDialogue();
+public delegate void EndOfDialogue(bool unlock, bool choice, int choiceID);
 
 public class ActionTalk : ActionTrigger
 {
+    // talvez dialogos unlocke coisas se feitos do jeito certo
+    // depende do caminho que a conversa vai tomar
+
     // --- Public Variables --- //
     [TextArea(1, 3)] public string PromptHeader;
     public List<DialoguePrompt> DialoguePrompts = new List<DialoguePrompt>();
@@ -21,7 +24,7 @@ public class ActionTalk : ActionTrigger
     public override void DoAction() {
         base.DoAction();
 
-        function = EndAction;
+        function = EndDialogue;
 
         if (canStartDialogAgain) {
             DialogueManager.Instance.SelectPrompt(DialoguePrompts, function, PromptHeader);
@@ -31,6 +34,18 @@ public class ActionTalk : ActionTrigger
             base.EndAction();
         }
     }
+
+    public void EndDialogue(bool unlock, bool choice, int choiceID) {
+
+        if (unlock)
+            this.GetComponent<ActionUnlock>().UnlockItem();
+
+        if (choice)
+            this.GetComponent<ActionTalkChoices>().DoAction();
+        else 
+            EndAction();
+    }
+
 
     public override void EndAction() {
         base.EndAction();
