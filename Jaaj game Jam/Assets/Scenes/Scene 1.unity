@@ -130,7 +130,7 @@ PrefabInstance:
     - target: {fileID: 1139036679133091325, guid: 27a8cf4fa232145c980810efef21dbda,
         type: 3}
       propertyPath: m_Name
-      value: Object 1 (5)
+      value: Pato
       objectReference: {fileID: 0}
     - target: {fileID: 1139036679133091324, guid: 27a8cf4fa232145c980810efef21dbda,
         type: 3}
@@ -535,7 +535,8 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8362781304362884186, guid: e8b009a39e97847b1a1404ae5d9ebfda, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e8b009a39e97847b1a1404ae5d9ebfda, type: 3}
 --- !u!4 &117422033 stripped
 Transform:
@@ -553,7 +554,7 @@ PrefabInstance:
     - target: {fileID: 1139036679133091325, guid: 27a8cf4fa232145c980810efef21dbda,
         type: 3}
       propertyPath: m_Name
-      value: Object 1 (1)
+      value: Comoda
       objectReference: {fileID: 0}
     - target: {fileID: 1139036679133091324, guid: 27a8cf4fa232145c980810efef21dbda,
         type: 3}
@@ -689,7 +690,7 @@ PrefabInstance:
     - target: {fileID: 1139036679133091325, guid: 27a8cf4fa232145c980810efef21dbda,
         type: 3}
       propertyPath: m_Name
-      value: Object 1 (2)
+      value: Flor
       objectReference: {fileID: 0}
     - target: {fileID: 1139036679133091324, guid: 27a8cf4fa232145c980810efef21dbda,
         type: 3}
@@ -1012,7 +1013,12 @@ PrefabInstance:
         type: 3}
       propertyPath: ObjectoCondicional
       value: 
-      objectReference: {fileID: 695766241}
+      objectReference: {fileID: 1009398730}
+    - target: {fileID: 6707979902055832612, guid: 8229645db1baf45d387dcb155a1e5009,
+        type: 3}
+      propertyPath: DialoguePrompts.Array.data[0].dialogue.Array.data[0].Sentence
+      value: "A porta est\xE1 abrindo"
+      objectReference: {fileID: 0}
     - target: {fileID: 6707979902055832619, guid: 8229645db1baf45d387dcb155a1e5009,
         type: 3}
       propertyPath: Condicao
@@ -1401,7 +1407,8 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8362781304362884186, guid: e8b009a39e97847b1a1404ae5d9ebfda, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e8b009a39e97847b1a1404ae5d9ebfda, type: 3}
 --- !u!4 &571209373 stripped
 Transform:
@@ -1834,7 +1841,7 @@ PrefabInstance:
     - target: {fileID: 1139036679133091325, guid: 27a8cf4fa232145c980810efef21dbda,
         type: 3}
       propertyPath: m_Name
-      value: Object 1 (7)
+      value: Planta
       objectReference: {fileID: 0}
     - target: {fileID: 1139036679133091324, guid: 27a8cf4fa232145c980810efef21dbda,
         type: 3}
@@ -1946,6 +1953,35 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 6707979901360689021}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1009398730 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8362781304362884184, guid: e8b009a39e97847b1a1404ae5d9ebfda,
+    type: 3}
+  m_PrefabInstance: {fileID: 1608098192}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1009398731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009398730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54dd88e5783820a4b847ffb157ea6270, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MultipleOptions: 0
+  PromptHeader: A
+  DialoguePrompts:
+  - Unlock: 1
+    triggerChoices: 0
+    choicesID: 0
+    DialogPrompt: A
+    dialogue:
+    - SpeakerName: Abajur
+      Sentence: "At\xE9 que isso d\xE1 uma bela saia, n\xE3o \xE9?"
+  canStartDialogAgain: 1
 --- !u!1001 &1013608416
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1956,7 +1992,7 @@ PrefabInstance:
     - target: {fileID: 1139036679133091325, guid: 27a8cf4fa232145c980810efef21dbda,
         type: 3}
       propertyPath: m_Name
-      value: Object 1 (4)
+      value: Quadro
       objectReference: {fileID: 0}
     - target: {fileID: 1139036679133091324, guid: 27a8cf4fa232145c980810efef21dbda,
         type: 3}
@@ -2363,7 +2399,7 @@ PrefabInstance:
     - target: {fileID: 8362781304362884184, guid: e8b009a39e97847b1a1404ae5d9ebfda,
         type: 3}
       propertyPath: m_Name
-      value: Saia
+      value: Abajur
       objectReference: {fileID: 0}
     - target: {fileID: 8362781304362884187, guid: e8b009a39e97847b1a1404ae5d9ebfda,
         type: 3}
@@ -2450,6 +2486,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.194565
       objectReference: {fileID: 0}
+    - target: {fileID: 8362781304362884186, guid: e8b009a39e97847b1a1404ae5d9ebfda,
+        type: 3}
+      propertyPath: DialoguePrompts.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8362781304362884186, guid: e8b009a39e97847b1a1404ae5d9ebfda,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8362781304362884186, guid: e8b009a39e97847b1a1404ae5d9ebfda,
+        type: 3}
+      propertyPath: PromptHeader
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8362781303981466991, guid: e8b009a39e97847b1a1404ae5d9ebfda,
         type: 3}
       propertyPath: m_Sprite
@@ -2471,7 +2522,8 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8362781304362884186, guid: e8b009a39e97847b1a1404ae5d9ebfda, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e8b009a39e97847b1a1404ae5d9ebfda, type: 3}
 --- !u!4 &1608098193 stripped
 Transform:
@@ -2568,7 +2620,7 @@ PrefabInstance:
     - target: {fileID: 1139036679133091325, guid: 27a8cf4fa232145c980810efef21dbda,
         type: 3}
       propertyPath: m_Name
-      value: Object 1 (3)
+      value: Cama
       objectReference: {fileID: 0}
     - target: {fileID: 1139036679133091324, guid: 27a8cf4fa232145c980810efef21dbda,
         type: 3}
@@ -2908,7 +2960,7 @@ PrefabInstance:
     - target: {fileID: 1139036679133091325, guid: 27a8cf4fa232145c980810efef21dbda,
         type: 3}
       propertyPath: m_Name
-      value: Object 1 (9)
+      value: Espelho
       objectReference: {fileID: 0}
     - target: {fileID: 1139036679133091324, guid: 27a8cf4fa232145c980810efef21dbda,
         type: 3}
@@ -3033,7 +3085,7 @@ PrefabInstance:
     - target: {fileID: 1139036679133091325, guid: 27a8cf4fa232145c980810efef21dbda,
         type: 3}
       propertyPath: m_Name
-      value: Object 1 (6)
+      value: telescopio
       objectReference: {fileID: 0}
     - target: {fileID: 1139036679133091324, guid: 27a8cf4fa232145c980810efef21dbda,
         type: 3}
@@ -3243,7 +3295,7 @@ PrefabInstance:
     - target: {fileID: 1139036679133091325, guid: 27a8cf4fa232145c980810efef21dbda,
         type: 3}
       propertyPath: m_Name
-      value: Object 1 (11)
+      value: Prateleira
       objectReference: {fileID: 0}
     - target: {fileID: 1139036679133091324, guid: 27a8cf4fa232145c980810efef21dbda,
         type: 3}
@@ -3777,10 +3829,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1469471915, guid: f9dacdc4cb85c470082b7042899a6ba4, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.48
-      objectReference: {fileID: 0}
     - target: {fileID: 8673047234291678522, guid: f9dacdc4cb85c470082b7042899a6ba4,
         type: 3}
       propertyPath: m_LinearDrag
@@ -3800,6 +3848,10 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1469471915, guid: f9dacdc4cb85c470082b7042899a6ba4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.48
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9dacdc4cb85c470082b7042899a6ba4, type: 3}
