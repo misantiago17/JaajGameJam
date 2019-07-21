@@ -2474,6 +2474,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.194565
       objectReference: {fileID: 0}
+    - target: {fileID: 8362781304362884186, guid: e8b009a39e97847b1a1404ae5d9ebfda,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8362781303981466991, guid: e8b009a39e97847b1a1404ae5d9ebfda,
         type: 3}
       propertyPath: m_Sprite
@@ -2495,7 +2500,8 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8362781304362884186, guid: e8b009a39e97847b1a1404ae5d9ebfda, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e8b009a39e97847b1a1404ae5d9ebfda, type: 3}
 --- !u!4 &1608098193 stripped
 Transform:

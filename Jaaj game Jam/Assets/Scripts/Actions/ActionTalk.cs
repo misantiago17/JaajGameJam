@@ -8,7 +8,7 @@ public delegate void EndOfDialogue(bool unlock, bool choice, int choiceID);
 public class ActionTalk : ActionTrigger
 {
     // --- Public Variables --- //
-
+    public AudioSource audio;
     // Abre para adicionar mais de uma opção de diálogo
     public bool MultipleOptions = false;
     // Título que aparece antes das escolhas do jogador
@@ -30,6 +30,7 @@ public class ActionTalk : ActionTrigger
         function = EndDialogue;
 
         if (canStartDialogAgain) {
+            audio.Play();
             DialogueManager.Instance.SelectPrompt(DialoguePrompts, function, PromptHeader);
             startDialogue = true;
             canStartDialogAgain = false;

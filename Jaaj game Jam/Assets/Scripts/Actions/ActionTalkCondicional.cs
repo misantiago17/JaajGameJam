@@ -5,7 +5,7 @@ using UnityEngine;
 public class ActionTalkCondicional: ActionTrigger
 {
     // --- Public Variables --- //
-
+    public AudioSource audio;
     public GameObject ObjectoCondicional;
 
     [TextArea(1, 3)] public string PromptHeader;
@@ -25,6 +25,7 @@ public class ActionTalkCondicional: ActionTrigger
         function = EndDialogue;
 
         if (canStartDialogAgain && ObjectoCondicional.GetComponent<ActionUnlock>().Unlocked) {
+            audio.Play();
             DialogueManager.Instance.SelectPrompt(DialoguePrompts, function, PromptHeader);
             startDialogue = true;
             canStartDialogAgain = false;
