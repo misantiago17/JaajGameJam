@@ -5,6 +5,7 @@ using UnityEngine;
 public class ActionTalkChoices : ActionTrigger
 {
     // --- Public Variables --- //
+    public AudioSource audio;
     public int ChoicesIDInObject = 0;
 
     [TextArea(1, 3)] public string PromptHeader; 
@@ -21,7 +22,8 @@ public class ActionTalkChoices : ActionTrigger
     public override void DoAction()
     {
         base.DoAction();
-
+        if (audio)
+            audio.Play();
         function = EndDialogue;
 
         if (canStartDialogAgain)
