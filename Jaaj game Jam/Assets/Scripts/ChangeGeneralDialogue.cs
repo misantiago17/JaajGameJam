@@ -6,6 +6,10 @@ using UnityEngine;
 public class ChangeGeneralDialogue : MonoBehaviour
 {
 
+    // --- Public Variables --- //
+    [TextArea(1, 3)] public string PromptHeader;
+    public List<DialoguePrompt> DialoguePrompts = new List<DialoguePrompt>();
+
     public void ChangeDialogue()
     {
 
