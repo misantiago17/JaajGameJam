@@ -94,6 +94,9 @@ GameObject:
   - component: {fileID: 6707979902055832619}
   - component: {fileID: 6707979902055832613}
   - component: {fileID: 997135190}
+  - component: {fileID: 997135191}
+  - component: {fileID: 9200764473191208569}
+  - component: {fileID: 4028301844274252751}
   m_Layer: 0
   m_Name: Object Door
   m_TagString: Untagged
@@ -156,7 +159,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PromptHeader: A
   DialoguePrompts:
-  - DialogPrompt: A
+  - Unlock: 0
+    triggerChoices: 0
+    choicesID: 0
+    DialogPrompt: A
     dialogue:
     - SpeakerName: Porta
       Sentence: '*Porta Noises*'
@@ -176,10 +182,13 @@ MonoBehaviour:
   ObjectoCondicional: {fileID: 0}
   PromptHeader: A
   DialoguePrompts:
-  - DialogPrompt: A
+  - Unlock: 0
+    triggerChoices: 1
+    choicesID: 0
+    DialogPrompt: A
     dialogue:
     - SpeakerName: Porta
-      Sentence: '*Reeeeh* <n>A porta se abriu</n>'
+      Sentence: A porta se recusa a abrir
   canStartDialogAgain: 1
 --- !u!114 &6707979902055832619
 MonoBehaviour:
@@ -223,7 +232,105 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PromptHeader: A
   DialoguePrompts:
-  - DialogPrompt: A
+  - Unlock: 0
+    triggerChoices: 0
+    choicesID: 0
+    DialogPrompt: A
+    dialogue:
+    - SpeakerName: Porta
+      Sentence: I'm free
+--- !u!114 &997135191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6707979902055832617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b71dfa160907412cb9e68788a28300a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ChoicesIDInObject: 0
+  PromptHeader: Escolhas
+  DialoguePrompts:
+  - Unlock: 0
+    triggerChoices: 0
+    choicesID: 0
+    DialogPrompt: Usar a chave
+    dialogue:
+    - SpeakerName: Porta
+      Sentence: "voc\xEA est\xE1 maluco"
+  - Unlock: 0
+    triggerChoices: 0
+    choicesID: 0
+    DialogPrompt: Usar o isqueiro
+    dialogue:
+    - SpeakerName: Porta
+      Sentence: Ouch
+  - Unlock: 0
+    triggerChoices: 1
+    choicesID: 1
+    DialogPrompt: "Usar sua m\xE3o"
+    dialogue:
+    - SpeakerName: Porta
+      Sentence: "O que voc\xEA vai fazer com isso?"
+  canStartDialogAgain: 1
+--- !u!114 &9200764473191208569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6707979902055832617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b71dfa160907412cb9e68788a28300a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ChoicesIDInObject: 1
+  PromptHeader: "O que voc\xEA vai fazer com isso?"
+  DialoguePrompts:
+  - Unlock: 0
+    triggerChoices: 0
+    choicesID: 1
+    DialogPrompt: "Girar a ma\xE7aneta"
+    dialogue:
+    - SpeakerName: Porta
+      Sentence: "TIRE SUA M\xC3O DA\xCD"
+  - Unlock: 0
+    triggerChoices: 0
+    choicesID: 0
+    DialogPrompt: Empurrar a porta
+    dialogue:
+    - SpeakerName: Porta
+      Sentence: "Porque voc\xEA \xE9 t\xE3o rude?"
+  - Unlock: 1
+    triggerChoices: 0
+    choicesID: 0
+    DialogPrompt: Fazer carinho na porta
+    dialogue:
+    - SpeakerName: Porta
+      Sentence: '*Reeeeh* <n>A porta se abriu</n>'
+  canStartDialogAgain: 1
+--- !u!114 &4028301844274252751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6707979902055832617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 990d48af2f5b14262b652764c307238f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PromptHeader: A
+  DialoguePrompts:
+  - Unlock: 0
+    triggerChoices: 0
+    choicesID: 0
+    DialogPrompt: A
     dialogue:
     - SpeakerName: Porta
       Sentence: I'm free
