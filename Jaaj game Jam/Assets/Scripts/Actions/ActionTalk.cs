@@ -30,7 +30,8 @@ public class ActionTalk : ActionTrigger
         function = EndDialogue;
 
         if (canStartDialogAgain) {
-            audio.Play();
+            if (audio)
+                audio.Play();
             DialogueManager.Instance.SelectPrompt(DialoguePrompts, function, PromptHeader);
             startDialogue = true;
             canStartDialogAgain = false;

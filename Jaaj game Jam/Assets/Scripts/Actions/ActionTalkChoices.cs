@@ -22,7 +22,8 @@ public class ActionTalkChoices : ActionTrigger
     public override void DoAction()
     {
         base.DoAction();
-        audio.Play();
+        if (audio)
+            audio.Play();
         function = EndDialogue;
 
         if (canStartDialogAgain)
