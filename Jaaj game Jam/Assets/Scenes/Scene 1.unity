@@ -427,7 +427,7 @@ PrefabInstance:
     - target: {fileID: 8362781304362884184, guid: e8b009a39e97847b1a1404ae5d9ebfda,
         type: 3}
       propertyPath: m_Name
-      value: Object 2 Grab (3)
+      value: Relogio
       objectReference: {fileID: 0}
     - target: {fileID: 8362781304362884187, guid: e8b009a39e97847b1a1404ae5d9ebfda,
         type: 3}
@@ -669,7 +669,7 @@ PrefabInstance:
     - target: {fileID: 1139036679911540467, guid: 27a8cf4fa232145c980810efef21dbda,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27a8cf4fa232145c980810efef21dbda, type: 3}
@@ -815,7 +815,7 @@ PrefabInstance:
     - target: {fileID: 1139036679133091325, guid: 27a8cf4fa232145c980810efef21dbda,
         type: 3}
       propertyPath: m_Name
-      value: Object 1 (8)
+      value: Porta
       objectReference: {fileID: 0}
     - target: {fileID: 1139036679133091324, guid: 27a8cf4fa232145c980810efef21dbda,
         type: 3}
@@ -931,7 +931,7 @@ PrefabInstance:
     - target: {fileID: 6707979902055832617, guid: 8229645db1baf45d387dcb155a1e5009,
         type: 3}
       propertyPath: m_Name
-      value: Object Door (1)
+      value: Tapete
       objectReference: {fileID: 0}
     - target: {fileID: 6707979902055832616, guid: 8229645db1baf45d387dcb155a1e5009,
         type: 3}
@@ -1283,7 +1283,7 @@ PrefabInstance:
     - target: {fileID: 8362781304362884184, guid: e8b009a39e97847b1a1404ae5d9ebfda,
         type: 3}
       propertyPath: m_Name
-      value: Object 2 Grab (2)
+      value: Pia
       objectReference: {fileID: 0}
     - target: {fileID: 8362781304362884187, guid: e8b009a39e97847b1a1404ae5d9ebfda,
         type: 3}
@@ -2353,7 +2353,7 @@ PrefabInstance:
     - target: {fileID: 8362781304362884184, guid: e8b009a39e97847b1a1404ae5d9ebfda,
         type: 3}
       propertyPath: m_Name
-      value: Object 2 Grab (1)
+      value: Saia
       objectReference: {fileID: 0}
     - target: {fileID: 8362781304362884187, guid: e8b009a39e97847b1a1404ae5d9ebfda,
         type: 3}
@@ -3353,7 +3353,7 @@ PrefabInstance:
     - target: {fileID: 1139036679133091325, guid: 27a8cf4fa232145c980810efef21dbda,
         type: 3}
       propertyPath: m_Name
-      value: Object 1 (10)
+      value: Roupas
       objectReference: {fileID: 0}
     - target: {fileID: 1139036679133091324, guid: 27a8cf4fa232145c980810efef21dbda,
         type: 3}
@@ -3770,6 +3770,16 @@ PrefabInstance:
     - target: {fileID: 1469471915, guid: f9dacdc4cb85c470082b7042899a6ba4, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 8673047234291678522, guid: f9dacdc4cb85c470082b7042899a6ba4,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8673047234291678522, guid: f9dacdc4cb85c470082b7042899a6ba4,
+        type: 3}
+      propertyPath: m_Mass
+      value: 0.63
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9dacdc4cb85c470082b7042899a6ba4, type: 3}
