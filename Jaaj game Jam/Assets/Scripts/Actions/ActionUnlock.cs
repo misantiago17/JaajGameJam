@@ -30,5 +30,7 @@ public class ActionUnlock : MonoBehaviour
             this.GetComponent<AddItemCheckList>().AddItemInCheckList();
         if (this.GetComponent<CompleteItemCheckList>())
             this.GetComponent<CompleteItemCheckList>().RemoveItemInCheckList();
+        if (this.GetComponent<ChangeGeneralDialogue>())
+            this.GetComponent<ChangeGeneralDialogue>().ChangeDialogue();
     }
 }
