@@ -615,6 +615,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 6707979901360689021}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &997135190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 997135188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 990d48af2f5b14262b652764c307238f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PromptHeader: A
+  DialoguePrompts:
+  - DialogPrompt: A
+    dialogue:
+    - SpeakerName: Porta
+      Sentence: I'm free
 --- !u!114 &1019771805 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1151092388668009188, guid: aea41e4ac7bd981419e61003ffa9ce23,

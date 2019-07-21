@@ -12,7 +12,8 @@ public class ChangeGeneralDialogue : MonoBehaviour
 
     public void ChangeDialogue()
     {
-
+        this.GetComponent<ActionTalk>().PromptHeader = PromptHeader;
+        this.GetComponent<ActionTalk>().DialoguePrompts = DialoguePrompts;
     }
 
 }
