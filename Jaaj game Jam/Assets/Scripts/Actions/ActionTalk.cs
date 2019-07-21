@@ -39,9 +39,8 @@ public class ActionTalk : ActionTrigger
 
         if (choice)
         {
-            Debug.Log("Sou uma escolha");
-            startDialogue = false;
             this.GetComponent<ActionTalkChoices>().DoAction();
+            EndAction();
         } else
             EndAction();
     }
@@ -50,7 +49,7 @@ public class ActionTalk : ActionTrigger
     public override void EndAction() {
         base.EndAction();
 
-
+        startDialogue = false;
         StartCoroutine(WaitUntilDialogIsFinished());
     }
 

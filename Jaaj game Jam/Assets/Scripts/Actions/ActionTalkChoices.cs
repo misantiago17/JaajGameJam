@@ -44,18 +44,17 @@ public class ActionTalkChoices : ActionTrigger
 
         if (choice)
         {
-            startDialogue = false;
             this.GetComponent<ActionTalkChoices>().DoAction();
+            EndAction();
 
-        }            
-        //else
+        } else
             EndAction();
     }
 
     public override void EndAction()
     {
         base.EndAction();
-
+        startDialogue = false;
 
         StartCoroutine(WaitUntilDialogIsFinished());
     }
