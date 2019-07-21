@@ -38,6 +38,8 @@ public class DialogueManager: MonoBehaviour
         instance = this;
         sentences = new Queue<string>();
         speakerName = new Queue<string>();
+
+        this.GetComponent<AddItemCheckList>().AddItemInCheckList();
     }
 
     private void Update() {

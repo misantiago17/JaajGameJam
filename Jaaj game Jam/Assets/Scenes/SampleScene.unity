@@ -430,6 +430,8 @@ GameObject:
   - component: {fileID: 695766242}
   - component: {fileID: 695766244}
   - component: {fileID: 695766243}
+  - component: {fileID: 695766245}
+  - component: {fileID: 695766246}
   m_Layer: 0
   m_Name: Object 2 Grab
   m_TagString: Untagged
@@ -464,8 +466,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e9156b3fb399144383112e5a31c19a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PromptHeader: 
-  DialoguePrompts: []
+  PromptHeader: A
+  DialoguePrompts:
+  - DialogPrompt: A
+    dialogue:
+    - SpeakerName: Chave
+      Sentence: Oi, eu sou uma chave
   canStartDialogAgain: 1
 --- !u!61 &695766244
 BoxCollider2D:
@@ -493,6 +499,34 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &695766245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695766241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 489b1e830fb2f4073b5ddb74a9783afe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texts:
+  - Pegue a chave
+--- !u!114 &695766246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695766241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 592d91ef7e3b544b4a98c0b6682b1ec1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texts:
+  - Abra a porta
 --- !u!1 &715858750
 GameObject:
   m_ObjectHideFlags: 0
@@ -809,7 +843,10 @@ GameObject:
   m_Component:
   - component: {fileID: 997135189}
   - component: {fileID: 997135191}
+  - component: {fileID: 997135194}
+  - component: {fileID: 997135193}
   - component: {fileID: 997135190}
+  - component: {fileID: 997135192}
   m_Layer: 0
   m_Name: Object Door
   m_TagString: Untagged
@@ -871,6 +908,59 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &997135192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 997135188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 489b1e830fb2f4073b5ddb74a9783afe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texts:
+  - Abra a porta
+--- !u!114 &997135193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 997135188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 199478e0a98bbbc4a9dec5af5048845f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectoCondicional: {fileID: 695766241}
+  PromptHeader: A
+  DialoguePrompts:
+  - DialogPrompt: A
+    dialogue:
+    - SpeakerName: Porta
+      Sentence: '*Reeeeh* <n>A porta se abriu</n>'
+  canStartDialogAgain: 1
+--- !u!114 &997135194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 997135188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54dd88e5783820a4b847ffb157ea6270, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PromptHeader: A
+  DialoguePrompts:
+  - DialogPrompt: A
+    dialogue:
+    - SpeakerName: Porta
+      Sentence: '*Porta Noises*'
+  canStartDialogAgain: 1
 --- !u!1 &1017142542
 GameObject:
   m_ObjectHideFlags: 0
@@ -1084,6 +1174,34 @@ MonoBehaviour:
   dialogueHeader: {fileID: 1276150707}
   dialogueOptions: {fileID: 730030258}
   DelayBetweenSentencesValue: 0.3
+--- !u!114 &1266244724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266244722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad7f045973713aa43bf0f34565391f82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checklistBase: {fileID: 1691953183}
+  checklistTextsHolders: {fileID: 1691953182}
+--- !u!114 &1266244725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266244722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 592d91ef7e3b544b4a98c0b6682b1ec1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texts:
+  - Pegue a chave
 --- !u!114 &1276150707 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9121371576589109376, guid: aea41e4ac7bd981419e61003ffa9ce23,
@@ -1334,6 +1452,158 @@ MonoBehaviour:
     - SpeakerName: "Caixinha de M\xFAsica"
       Sentence: Espertinho
   canStartDialogAgain: 1
+--- !u!1001 &1691953180
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1765152198}
+    m_Modifications:
+    - target: {fileID: 2811098461071967178, guid: ae67fa522c3f8b2498b0bd3a8cfd4aa1,
+        type: 3}
+      propertyPath: m_Name
+      value: Checklist
+      objectReference: {fileID: 0}
+    - target: {fileID: 801119430636834507, guid: ae67fa522c3f8b2498b0bd3a8cfd4aa1,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 801119430636834507, guid: ae67fa522c3f8b2498b0bd3a8cfd4aa1,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 801119430636834507, guid: ae67fa522c3f8b2498b0bd3a8cfd4aa1,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 801119430636834507, guid: ae67fa522c3f8b2498b0bd3a8cfd4aa1,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 801119430636834507, guid: ae67fa522c3f8b2498b0bd3a8cfd4aa1,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 801119430636834507, guid: ae67fa522c3f8b2498b0bd3a8cfd4aa1,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 801119430636834507, guid: ae67fa522c3f8b2498b0bd3a8cfd4aa1,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 801119430636834507, guid: ae67fa522c3f8b2498b0bd3a8cfd4aa1,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 801119430636834507, guid: ae67fa522c3f8b2498b0bd3a8cfd4aa1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 801119430636834507, guid: ae67fa522c3f8b2498b0bd3a8cfd4aa1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 801119430636834507, guid: ae67fa522c3f8b2498b0bd3a8cfd4aa1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 801119430636834507, guid: ae67fa522c3f8b2498b0bd3a8cfd4aa1,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 715.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 801119430636834507, guid: ae67fa522c3f8b2498b0bd3a8cfd4aa1,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 381.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 801119430636834507, guid: ae67fa522c3f8b2498b0bd3a8cfd4aa1,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 489.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 801119430636834507, guid: ae67fa522c3f8b2498b0bd3a8cfd4aa1,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 317.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 801119430636834507, guid: ae67fa522c3f8b2498b0bd3a8cfd4aa1,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 801119430636834507, guid: ae67fa522c3f8b2498b0bd3a8cfd4aa1,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 801119430636834507, guid: ae67fa522c3f8b2498b0bd3a8cfd4aa1,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 801119430636834507, guid: ae67fa522c3f8b2498b0bd3a8cfd4aa1,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 801119430636834507, guid: ae67fa522c3f8b2498b0bd3a8cfd4aa1,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 801119430636834507, guid: ae67fa522c3f8b2498b0bd3a8cfd4aa1,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4931157146040303836, guid: ae67fa522c3f8b2498b0bd3a8cfd4aa1,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.00012207031
+      objectReference: {fileID: 0}
+    - target: {fileID: 1351332897195683421, guid: ae67fa522c3f8b2498b0bd3a8cfd4aa1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6135458080883955116, guid: ae67fa522c3f8b2498b0bd3a8cfd4aa1,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ae67fa522c3f8b2498b0bd3a8cfd4aa1, type: 3}
+--- !u!224 &1691953181 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 801119430636834507, guid: ae67fa522c3f8b2498b0bd3a8cfd4aa1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1691953180}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1691953182 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8352132976117320889, guid: ae67fa522c3f8b2498b0bd3a8cfd4aa1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1691953180}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1691953183 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1351332897195683421, guid: ae67fa522c3f8b2498b0bd3a8cfd4aa1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1691953180}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1737700981
 GameObject:
   m_ObjectHideFlags: 0
@@ -1491,6 +1761,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1214103381}
+  - {fileID: 1691953181}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
