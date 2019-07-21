@@ -72,7 +72,7 @@ public class ActionTalk : ActionTrigger
 }
 
 
-[CustomEditor(typeof(ActionTalk))]
+/*[CustomEditor(typeof(ActionTalk))]
 public class MyScriptEditor: Editor
 {
     public override void OnInspectorGUI() {
@@ -89,4 +89,4 @@ public class MyScriptEditor: Editor
         }
 
     }
-}
+}*/
