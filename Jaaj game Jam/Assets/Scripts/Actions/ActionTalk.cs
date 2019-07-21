@@ -1,13 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 public delegate void EndOfDialogue(bool unlock, bool choice, int choiceID);
 
 public class ActionTalk : ActionTrigger
 {
     // --- Public Variables --- //
+
+    // Abre para adicionar mais de uma opção de diálogo
+    public bool MultipleOptions = false;
+    // Título que aparece antes das escolhas do jogador
     [TextArea(1, 3)] public string PromptHeader;
+    // As escolhas que o jogador pode selecionar
     public List<DialoguePrompt> DialoguePrompts = new List<DialoguePrompt>();
 
     // --- Private Variables --- //
@@ -62,5 +68,25 @@ public class ActionTalk : ActionTrigger
 
         yield return new WaitForSeconds(0.3f);
         canStartDialogAgain = true;
+    }
+}
+
+
+[CustomEditor(typeof(ActionTalk))]
+public class MyScriptEditor: Editor
+{
+    public override void OnInspectorGUI() {
+        var Dialogue = target as ActionTalk;
+
+        Dialogue.MultipleOptions = GUILayout.Toggle(Dialogue.MultipleOptions, "Multiple Options");
+
+        if (Dialogue.MultipleOptions) {
+            Dialogue.PromptHeader = EditorGUILayout.("Prompt Header");
+            Dialogue.PromptHeader = EditorGUILayout.TextArea("Prompt Header");
+
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("DialoguePrompts"), true);
+            serializedObject.ApplyModifiedProperties();
+        }
+
     }
 }
