@@ -721,12 +721,12 @@ PrefabInstance:
     - target: {fileID: 1139036679133091323, guid: 27a8cf4fa232145c980810efef21dbda,
         type: 3}
       propertyPath: DialoguePrompts.Array.data[0].DialogPrompt
-      value: 
+      value: A
       objectReference: {fileID: 0}
     - target: {fileID: 1139036679133091323, guid: 27a8cf4fa232145c980810efef21dbda,
         type: 3}
       propertyPath: DialoguePrompts.Array.data[0].dialogue.Array.data[0].SpeakerName
-      value: "C\xF4moda"
+      value: Narrador
       objectReference: {fileID: 0}
     - target: {fileID: 1139036679133091323, guid: 27a8cf4fa232145c980810efef21dbda,
         type: 3}
@@ -737,6 +737,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1139036679133091323, guid: 27a8cf4fa232145c980810efef21dbda,
+        type: 3}
+      propertyPath: DialoguePrompts.Array.data[0].Unlock
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1139036679911540467, guid: 27a8cf4fa232145c980810efef21dbda,
         type: 3}
@@ -3394,7 +3399,7 @@ PrefabInstance:
     - target: {fileID: 1139036679133091323, guid: 27a8cf4fa232145c980810efef21dbda,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1139036679911540467, guid: 27a8cf4fa232145c980810efef21dbda,
         type: 3}
