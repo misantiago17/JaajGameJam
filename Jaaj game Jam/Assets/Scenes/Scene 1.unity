@@ -1131,9 +1131,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1139036679133091321, guid: 27a8cf4fa232145c980810efef21dbda,
         type: 3}
+      propertyPath: DialoguePrompts.Array.data[0].dialogue.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1139036679133091321, guid: 27a8cf4fa232145c980810efef21dbda,
+        type: 3}
       propertyPath: ObjectoCondicional
       value: 
-      objectReference: {fileID: 997135188}
+      objectReference: {fileID: 565143476}
+    - target: {fileID: 1139036679133091321, guid: 27a8cf4fa232145c980810efef21dbda,
+        type: 3}
+      propertyPath: DialoguePrompts.Array.data[0].dialogue.Array.data[0].SpeakerName
+      value: "C\xF4moda"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1139036679133091321, guid: 27a8cf4fa232145c980810efef21dbda,
+        type: 3}
+      propertyPath: DialoguePrompts.Array.data[0].dialogue.Array.data[0].Sentence
+      value: "T\xE1 procurando alguma coisa a\xED?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1139036679133091321, guid: 27a8cf4fa232145c980810efef21dbda,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1139036679911540468, guid: 27a8cf4fa232145c980810efef21dbda,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1153,6 +1173,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.10333782
+      objectReference: {fileID: 0}
+    - target: {fileID: 1139036679133091323, guid: 27a8cf4fa232145c980810efef21dbda,
+        type: 3}
+      propertyPath: DialoguePrompts.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1139036679133091323, guid: 27a8cf4fa232145c980810efef21dbda,
+        type: 3}
+      propertyPath: DialoguePrompts.Array.data[0].dialogue.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1139036679133091323, guid: 27a8cf4fa232145c980810efef21dbda,
+        type: 3}
+      propertyPath: DialoguePrompts.Array.data[0].DialogPrompt
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1139036679133091323, guid: 27a8cf4fa232145c980810efef21dbda,
+        type: 3}
+      propertyPath: DialoguePrompts.Array.data[0].dialogue.Array.data[0].SpeakerName
+      value: "C\xF4moda"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1139036679133091323, guid: 27a8cf4fa232145c980810efef21dbda,
+        type: 3}
+      propertyPath: DialoguePrompts.Array.data[0].dialogue.Array.data[0].Sentence
+      value: "T\xE1 procurando alguma coisa a\xED?"
       objectReference: {fileID: 0}
     - target: {fileID: 1139036679911540467, guid: 27a8cf4fa232145c980810efef21dbda,
         type: 3}
@@ -1906,7 +1951,7 @@ PrefabInstance:
     - target: {fileID: 6707979902055832612, guid: 8229645db1baf45d387dcb155a1e5009,
         type: 3}
       propertyPath: DialoguePrompts.Array.data[0].dialogue.Array.data[0].Sentence
-      value: "A porta est\xE1 abrindo"
+      value: Ah! Finalmente vamos descer!
       objectReference: {fileID: 0}
     - target: {fileID: 6707979902055832619, guid: 8229645db1baf45d387dcb155a1e5009,
         type: 3}
@@ -1932,6 +1977,99 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.075583965
+      objectReference: {fileID: 0}
+    - target: {fileID: 6707979902055832615, guid: 8229645db1baf45d387dcb155a1e5009,
+        type: 3}
+      propertyPath: DialoguePrompts.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6707979902055832615, guid: 8229645db1baf45d387dcb155a1e5009,
+        type: 3}
+      propertyPath: DialoguePrompts.Array.data[1].dialogue.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6707979902055832615, guid: 8229645db1baf45d387dcb155a1e5009,
+        type: 3}
+      propertyPath: DialoguePrompts.Array.data[2].dialogue.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6707979902055832615, guid: 8229645db1baf45d387dcb155a1e5009,
+        type: 3}
+      propertyPath: DialoguePrompts.Array.data[0].dialogue.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6707979902055832615, guid: 8229645db1baf45d387dcb155a1e5009,
+        type: 3}
+      propertyPath: DialoguePrompts.Array.data[0].dialogue.Array.data[0].SpeakerName
+      value: Tapete
+      objectReference: {fileID: 0}
+    - target: {fileID: 6707979902055832615, guid: 8229645db1baf45d387dcb155a1e5009,
+        type: 3}
+      propertyPath: DialoguePrompts.Array.data[0].dialogue.Array.data[0].Sentence
+      value: "Aah! Estamos aqui presentes em mais um dia na casa da fam\xEDlia Rodrigues."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6707979902055832615, guid: 8229645db1baf45d387dcb155a1e5009,
+        type: 3}
+      propertyPath: DialoguePrompts.Array.data[1].DialogPrompt
+      value: A
+      objectReference: {fileID: 0}
+    - target: {fileID: 6707979902055832615, guid: 8229645db1baf45d387dcb155a1e5009,
+        type: 3}
+      propertyPath: DialoguePrompts.Array.data[1].dialogue.Array.data[0].SpeakerName
+      value: Tapete
+      objectReference: {fileID: 0}
+    - target: {fileID: 6707979902055832615, guid: 8229645db1baf45d387dcb155a1e5009,
+        type: 3}
+      propertyPath: DialoguePrompts.Array.data[1].dialogue.Array.data[0].Sentence
+      value: "Hoje vamos acompanhar nosso querido Enzo, uma crian\xE7a de 12 anos
+        que vive com sua m\xE3e, Valentina. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 6707979902055832615, guid: 8229645db1baf45d387dcb155a1e5009,
+        type: 3}
+      propertyPath: DialoguePrompts.Array.data[2].DialogPrompt
+      value: A
+      objectReference: {fileID: 0}
+    - target: {fileID: 6707979902055832615, guid: 8229645db1baf45d387dcb155a1e5009,
+        type: 3}
+      propertyPath: DialoguePrompts.Array.data[2].dialogue.Array.data[0].SpeakerName
+      value: Tapete
+      objectReference: {fileID: 0}
+    - target: {fileID: 6707979902055832615, guid: 8229645db1baf45d387dcb155a1e5009,
+        type: 3}
+      propertyPath: DialoguePrompts.Array.data[2].dialogue.Array.data[0].Sentence
+      value: "Enzo \xE9 uma criatura de h\xE1bito e adora seguir uma rotina. Ele sempre
+        acorda antes do seu despertador come\xE7ar a tocar e desliga-o."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6707979902055832615, guid: 8229645db1baf45d387dcb155a1e5009,
+        type: 3}
+      propertyPath: DialoguePrompts.Array.data[0].dialogue.Array.data[1].SpeakerName
+      value: Tapete
+      objectReference: {fileID: 0}
+    - target: {fileID: 6707979902055832615, guid: 8229645db1baf45d387dcb155a1e5009,
+        type: 3}
+      propertyPath: DialoguePrompts.Array.data[0].dialogue.Array.data[1].Sentence
+      value: "Hoje vamos acompanhar nosso querido Enzo, uma crian\xE7a de 12 anos
+        que vive com sua m\xE3e Valentina. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 6707979902055832615, guid: 8229645db1baf45d387dcb155a1e5009,
+        type: 3}
+      propertyPath: DialoguePrompts.Array.data[0].dialogue.Array.data[2].SpeakerName
+      value: Tapete
+      objectReference: {fileID: 0}
+    - target: {fileID: 6707979902055832615, guid: 8229645db1baf45d387dcb155a1e5009,
+        type: 3}
+      propertyPath: DialoguePrompts.Array.data[0].dialogue.Array.data[2].Sentence
+      value: "Enzo \xE9 uma criatura de h\xE1bito e adora seguir uma rotina. Ele sempre
+        acorda antes do seu despertador come\xE7ar a tocar e desliga-o."
+      objectReference: {fileID: 0}
+    - target: {fileID: 997135191, guid: 8229645db1baf45d387dcb155a1e5009, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9200764473191208569, guid: 8229645db1baf45d387dcb155a1e5009,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6707979901975138925, guid: 8229645db1baf45d387dcb155a1e5009,
         type: 3}
@@ -2099,6 +2237,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &565143476 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6707979902055832617, guid: 8229645db1baf45d387dcb155a1e5009,
+    type: 3}
+  m_PrefabInstance: {fileID: 445589404}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &567761062
 GameObject:
   m_ObjectHideFlags: 0
@@ -3017,7 +3161,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 933862981}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.5667053, y: 0.8, z: 6.6679688}
+  m_LocalPosition: {x: -0.5667053, y: 1.61, z: 6.6679688}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1195620612}
