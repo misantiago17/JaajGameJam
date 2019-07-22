@@ -10,10 +10,11 @@ public class PlayerWalk : MonoBehaviour
     private Rigidbody2D PlayerRB;
     private Animator PlayerAnim;
 
+    public bool CanWalk = false;
+
     private void Start() {
         PlayerRB = this.GetComponent<Rigidbody2D>();
         PlayerAnim = this.GetComponentInChildren<Animator>();
-
     }
 
     // Update is called once per frame
@@ -24,59 +25,60 @@ public class PlayerWalk : MonoBehaviour
             PlayerAnim.SetBool("moving", false);
         }
 
-        // Anda para a esquerda
-        if (Input.GetButton("Left")) {
+        if (CanWalk) {
 
-            // Caminhada para a esquerda
-            PlayerAnim.SetBool("mirror", true);
-            PlayerAnim.SetBool("moving", true);
+            // Anda para a esquerda
+            if (Input.GetButton("Left")) {
 
-            // Limita a velocidade
-            if (PlayerRB.velocity.x > -PlayervelocityLimit) {
-                PlayerRB.AddForce(PlayerVelocity * Vector2.left);
+                // Caminhada para a esquerda
+                PlayerAnim.SetBool("mirror", true);
+                PlayerAnim.SetBool("moving", true);
+
+                // Limita a velocidade
+                if (PlayerRB.velocity.x > -PlayervelocityLimit) {
+                    PlayerRB.AddForce(PlayerVelocity * Vector2.left);
+                }
+
+                // Anda para a direita
+            } else if (Input.GetButton("Right")) {
+
+                // Caminhada para a direita
+                PlayerAnim.SetBool("mirror", false);
+                PlayerAnim.SetBool("moving", true);
+
+                // Limita a velocidade
+                if (PlayerRB.velocity.x < PlayervelocityLimit) {
+                    PlayerRB.AddForce(PlayerVelocity * Vector2.right);
+                }
+
             }
 
-        // Anda para a direita
-        } else if (Input.GetButton("Right")) {
+            // Anda para a cima
+            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) {
 
-            // Caminhada para a direita
-            PlayerAnim.SetBool("mirror", false);
-            PlayerAnim.SetBool("moving", true);
+                // Está andando
+                PlayerAnim.SetBool("moving", true);
 
-            // Limita a velocidade
-            if (PlayerRB.velocity.x < PlayervelocityLimit) {
-                PlayerRB.AddForce(PlayerVelocity * Vector2.right);
+                // Limita a velocidade
+                if (PlayerRB.velocity.y > -PlayervelocityLimit) {
+                    PlayerRB.AddForce(PlayerVelocity * Vector2.up);
+                }
+
+            } else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) {
+
+                // Está andando
+                PlayerAnim.SetBool("moving", true);
+
+                // Limita a velocidade
+                if (PlayerRB.velocity.y < PlayervelocityLimit) {
+                    PlayerRB.AddForce(PlayerVelocity * Vector2.down);
+                }
+
+                // Anda para a baixo
+
             }
 
         }
-
-        // Anda para a cima
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) {
-            
-            // Está andando
-            PlayerAnim.SetBool("moving", true);
-
-            // Limita a velocidade
-            if (PlayerRB.velocity.y > -PlayervelocityLimit)
-            {
-                PlayerRB.AddForce(PlayerVelocity * Vector2.up);
-            }
-
-        } else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) {
-            
-            // Está andando
-            PlayerAnim.SetBool("moving", true);
-
-            // Limita a velocidade
-            if (PlayerRB.velocity.y < PlayervelocityLimit)
-            {
-                PlayerRB.AddForce(PlayerVelocity * Vector2.down);
-            }
-
-            // Anda para a baixo
-
-        }
-
 
     }
 }
