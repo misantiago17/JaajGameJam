@@ -640,7 +640,7 @@ PrefabInstance:
         type: 3}
       propertyPath: ObjectoCondicional
       value: 
-      objectReference: {fileID: 266012114}
+      objectReference: {fileID: 645529997}
     - target: {fileID: 1139036679133091321, guid: 27a8cf4fa232145c980810efef21dbda,
         type: 3}
       propertyPath: DialoguePrompts.Array.data[0].dialogue.Array.data[0].SpeakerName
@@ -767,12 +767,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1139036679133091324, guid: 27a8cf4fa232145c980810efef21dbda,
     type: 3}
   m_PrefabInstance: {fileID: 151206753}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &266012114 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1292643365559677329, guid: bd817e25af9601e489463a96160724de,
-    type: 3}
-  m_PrefabInstance: {fileID: 1292643366109075053}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &303328528
 PrefabInstance:
@@ -1633,6 +1627,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 571209372}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &645529997 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1139036679133091325, guid: 27a8cf4fa232145c980810efef21dbda,
+    type: 3}
+  m_PrefabInstance: {fileID: 1665979662}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &645529998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645529997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30f309f6d34c33748aa173255961e0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Unlocked: 0
+  Condicao: {fileID: 0}
 --- !u!1 &695766241 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8362781304362884184, guid: e8b009a39e97847b1a1404ae5d9ebfda,
@@ -2991,6 +3005,16 @@ PrefabInstance:
       propertyPath: DialoguePrompts.Array.data[0].dialogue.Array.data[2].Sentence
       value: "Enzo \xE9 uma criatura de h\xE1bito e adora seguir uma rotina. Ele sempre
         acorda antes do seu despertador come\xE7ar a tocar e desliga-o."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1139036679133091323, guid: 27a8cf4fa232145c980810efef21dbda,
+        type: 3}
+      propertyPath: MultipleOptions
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1139036679133091323, guid: 27a8cf4fa232145c980810efef21dbda,
+        type: 3}
+      propertyPath: DialoguePrompts.Array.data[0].Unlock
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1139036679911540467, guid: 27a8cf4fa232145c980810efef21dbda,
         type: 3}

@@ -17,7 +17,7 @@ public class CheckListManager : MonoBehaviour
 
     private void Awake() {
         instance = this;
-        this.GetComponent<ActionTalk>().DoAction();
+        //this.GetComponent<ActionTalk>().DoAction();
     }
 
     public void AddItemCheckList(string text)
