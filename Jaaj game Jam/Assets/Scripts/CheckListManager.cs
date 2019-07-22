@@ -19,7 +19,7 @@ public class CheckListManager : MonoBehaviour
 
     private void Awake() {
         instance = this;
-        //this.GetComponent<ActionTalk>().DoAction();
+        
     }
 
     private void Update() {

@@ -161,7 +161,7 @@ public class DialogueManager: MonoBehaviour
 
             //Debug.Log(dialoguePrompts[currentSelectedPrompt].Unlock + "Unlock");
             //Debug.Log(dialoguePrompts[currentSelectedPrompt].triggerChoices + "Choices");
-            //Debug.Log(dialoguePrompts[currentSelectedPrompt].choicesID + "NUM");
+            Debug.Log(dialoguePrompts[currentSelectedPrompt].choicesID + "NUM");
             EndDialog(dialoguePrompts[currentSelectedPrompt].Unlock, dialoguePrompts[currentSelectedPrompt].triggerChoices, dialoguePrompts[currentSelectedPrompt].choicesID);
             return;
         }
