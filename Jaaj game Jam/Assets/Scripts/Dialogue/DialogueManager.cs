@@ -159,8 +159,8 @@ public class DialogueManager: MonoBehaviour
 
         if (sentences.Count == 0) {
 
-            Debug.Log(dialoguePrompts[currentSelectedPrompt].Unlock + "Unlock");
-            Debug.Log(dialoguePrompts[currentSelectedPrompt].triggerChoices + "Choices");
+            //Debug.Log(dialoguePrompts[currentSelectedPrompt].Unlock + "Unlock");
+            //Debug.Log(dialoguePrompts[currentSelectedPrompt].triggerChoices + "Choices");
             Debug.Log(dialoguePrompts[currentSelectedPrompt].choicesID + "NUM");
             EndDialog(dialoguePrompts[currentSelectedPrompt].Unlock, dialoguePrompts[currentSelectedPrompt].triggerChoices, dialoguePrompts[currentSelectedPrompt].choicesID);
             return;

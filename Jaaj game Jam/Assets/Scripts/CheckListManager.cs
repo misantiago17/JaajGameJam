@@ -13,18 +13,30 @@ public class CheckListManager : MonoBehaviour
 
     private List<string> checklistTexts = new List<string>();
 
+    private bool ChekclistOn = true;
+
     public static CheckListManager Instance { get { return instance; } }
 
     private void Awake() {
         instance = this;
-        //this.GetComponent<ActionTalk>().DoAction();
+        
+    }
+
+    private void Update() {
+
+        if (Input.GetKeyDown(KeyCode.Space) && !ChekclistOn) {
+            ShowCheckList();
+        } else if (Input.GetKeyDown(KeyCode.Space) && ChekclistOn) {
+            HideCheckList();
+        }
+
     }
 
     public void AddItemCheckList(string text)
     {
         checklistTexts.Add(text);
 
-        UpdateCheckList();
+        ShowCheckList();
     }
 
 
@@ -35,11 +47,11 @@ public class CheckListManager : MonoBehaviour
             checklistTexts.Remove(text);
         }
 
-        UpdateCheckList();
+        ShowCheckList();
     }
 
 
-    private void UpdateCheckList()
+    private void ShowCheckList()
     {
         checklistBase.SetActive(false);
         checklistTextsHolders.SetActive(false);
@@ -65,7 +77,21 @@ public class CheckListManager : MonoBehaviour
                     break;
                 }
             }
-        } 
+        }
+
+        ChekclistOn = true;
+    }
+
+    private void HideCheckList() {
+
+        checklistBase.SetActive(false);
+        checklistTextsHolders.SetActive(false);
+        foreach (Transform textHolder in checklistTextsHolders.GetComponentInChildren<Transform>()) {
+            textHolder.gameObject.SetActive(false);
+        }
+
+        ChekclistOn = false;
+
     }
 
 }
