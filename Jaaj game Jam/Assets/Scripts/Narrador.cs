@@ -11,9 +11,4 @@ public class Narrador : MonoBehaviour
         this.GetComponent<ActionTalk>().DoAction();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

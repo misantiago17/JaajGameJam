@@ -32,6 +32,9 @@ public class ActionTalk : ActionTrigger
         if (canStartDialogAgain) {
             if (audio)
                 audio.Play();
+
+            PlayerCantWalk.Instance.CantWalk();
+
             DialogueManager.Instance.SelectPrompt(DialoguePrompts, function, PromptHeader);
             startDialogue = true;
             canStartDialogAgain = false;
@@ -58,6 +61,7 @@ public class ActionTalk : ActionTrigger
         base.EndAction();
 
         startDialogue = false;
+        PlayerCantWalk.Instance.CanWalk();
         StartCoroutine(WaitUntilDialogIsFinished());
     }
 
