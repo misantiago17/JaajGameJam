@@ -97,7 +97,7 @@ LightmapSettings:
     m_ShowResolutionOverlay: 1
     m_ExportTrainingData: 0
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -640,11 +640,11 @@ PrefabInstance:
         type: 3}
       propertyPath: ObjectoCondicional
       value: 
-      objectReference: {fileID: 1067881973}
+      objectReference: {fileID: 266012114}
     - target: {fileID: 1139036679133091321, guid: 27a8cf4fa232145c980810efef21dbda,
         type: 3}
       propertyPath: DialoguePrompts.Array.data[0].dialogue.Array.data[0].SpeakerName
-      value: Despertador
+      value: Narrador
       objectReference: {fileID: 0}
     - target: {fileID: 1139036679133091321, guid: 27a8cf4fa232145c980810efef21dbda,
         type: 3}
@@ -661,7 +661,7 @@ PrefabInstance:
     - target: {fileID: 1139036679133091321, guid: 27a8cf4fa232145c980810efef21dbda,
         type: 3}
       propertyPath: DialoguePrompts.Array.data[0].Unlock
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1139036679133091321, guid: 27a8cf4fa232145c980810efef21dbda,
         type: 3}
@@ -767,6 +767,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1139036679133091324, guid: 27a8cf4fa232145c980810efef21dbda,
     type: 3}
   m_PrefabInstance: {fileID: 151206753}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &266012114 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1292643365559677329, guid: bd817e25af9601e489463a96160724de,
+    type: 3}
+  m_PrefabInstance: {fileID: 1292643366109075053}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &303328528
 PrefabInstance:
@@ -1246,6 +1252,15 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 997135191, guid: 8229645db1baf45d387dcb155a1e5009, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9200764473191208569, guid: 8229645db1baf45d387dcb155a1e5009,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6707979901975138925, guid: 8229645db1baf45d387dcb155a1e5009,
         type: 3}
       propertyPath: m_Color.a
@@ -1257,15 +1272,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 7d1698f9379504b7c95c24e209aef1e1,
         type: 3}
-    - target: {fileID: 997135191, guid: 8229645db1baf45d387dcb155a1e5009, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9200764473191208569, guid: 8229645db1baf45d387dcb155a1e5009,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8229645db1baf45d387dcb155a1e5009, type: 3}
 --- !u!4 &445589405 stripped
@@ -2362,12 +2368,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1139036679133091324, guid: 27a8cf4fa232145c980810efef21dbda,
     type: 3}
   m_PrefabInstance: {fileID: 1836588209}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1067881973 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1139036679133091325, guid: 27a8cf4fa232145c980810efef21dbda,
-    type: 3}
-  m_PrefabInstance: {fileID: 1665979662}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1195620611
 GameObject:
@@ -4340,6 +4340,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8673047234291678527, guid: f9dacdc4cb85c470082b7042899a6ba4,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.3783195
+      objectReference: {fileID: 0}
+    - target: {fileID: 8673047234291678527, guid: f9dacdc4cb85c470082b7042899a6ba4,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 2.3278594
+      objectReference: {fileID: 0}
+    - target: {fileID: 8673047234291678527, guid: f9dacdc4cb85c470082b7042899a6ba4,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.1521542
+      objectReference: {fileID: 0}
+    - target: {fileID: 8673047234291678527, guid: f9dacdc4cb85c470082b7042899a6ba4,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 2.133061
       objectReference: {fileID: 0}
     - target: {fileID: 8673047234291678522, guid: f9dacdc4cb85c470082b7042899a6ba4,
         type: 3}
