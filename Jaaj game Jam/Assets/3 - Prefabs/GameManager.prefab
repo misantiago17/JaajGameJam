@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1266244723}
   - component: {fileID: 1266244724}
   - component: {fileID: 1266244725}
+  - component: {fileID: 5137096994831584195}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -80,3 +81,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   texts:
   - Pegue a chave
+--- !u!114 &5137096994831584195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4722114225479456031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54dd88e5783820a4b847ffb157ea6270, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audio: {fileID: 0}
+  MultipleOptions: 0
+  PromptHeader: A
+  DialoguePrompts:
+  - Unlock: 0
+    triggerChoices: 0
+    choicesID: 0
+    DialogPrompt: A
+    dialogue:
+    - SpeakerName: Narrador
+      Sentence: Bem-vindo
+    - SpeakerName: Narrador
+      Sentence: "Bem-vind\xE3o"
+    - SpeakerName: narrador
+      Sentence: Bem-vindado
+  canStartDialogAgain: 1
