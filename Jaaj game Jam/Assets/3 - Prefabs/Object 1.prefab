@@ -72,6 +72,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 199478e0a98bbbc4a9dec5af5048845f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audio: {fileID: 0}
   ObjectoCondicional: {fileID: 0}
   PromptHeader: A
   DialoguePrompts:
@@ -97,6 +98,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54dd88e5783820a4b847ffb157ea6270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audio: {fileID: 0}
+  MultipleOptions: 0
   PromptHeader: A
   DialoguePrompts:
   - Unlock: 0

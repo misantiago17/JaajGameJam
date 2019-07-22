@@ -25,8 +25,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8362781303981466989}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.07, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 0}
+  m_LocalPosition: {x: 0.1357, y: 0.079, z: 0}
+  m_LocalScale: {x: 0.112645, y: 0.07972819, z: 0}
   m_Children: []
   m_Father: {fileID: 8362781304362884187}
   m_RootOrder: 0
@@ -68,8 +68,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d68a4c35bee973b49a2e7e86334dc377, type: 3}
-  m_Color: {r: 0.745283, g: 0.3647704, b: 0.094918124, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 349dd20bd5eb540338834417b3ad06f8, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -92,7 +92,6 @@ GameObject:
   - component: {fileID: 8362781304362884190}
   - component: {fileID: 8362781304362884188}
   - component: {fileID: 8362781304362884191}
-  - component: {fileID: 8362781304362884186}
   m_Layer: 0
   m_Name: Object 2 Grab
   m_TagString: Untagged
@@ -107,9 +106,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8362781304362884184}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.97, y: -2.64, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 0}
+  m_LocalScale: {x: 1.9753126, y: 3.1467187, z: 0}
   m_Children:
   - {fileID: 8362781303981466988}
   m_Father: {fileID: 0}
@@ -183,22 +182,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   texts:
   - Abra a porta
---- !u!114 &8362781304362884186
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8362781304362884184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e9156b3fb399144383112e5a31c19a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PromptHeader: A
-  DialoguePrompts:
-  - DialogPrompt: A
-    dialogue:
-    - SpeakerName: Chave
-      Sentence: Oi, eu sou uma chave
-  canStartDialogAgain: 1

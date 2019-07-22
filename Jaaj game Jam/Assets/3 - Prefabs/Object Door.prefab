@@ -25,8 +25,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6707979901975138931}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.099, z: 0}
-  m_LocalScale: {x: 1, y: 3.198, z: 0}
+  m_LocalPosition: {x: 0.0014, y: -0.008, z: 0}
+  m_LocalScale: {x: 0.029933363, y: 0.075583965, z: 0}
   m_Children: []
   m_Father: {fileID: 6707979902055832616}
   m_RootOrder: 0
@@ -68,8 +68,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d68a4c35bee973b49a2e7e86334dc377, type: 3}
-  m_Color: {r: 0.11792453, g: 0.14016882, b: 0.4716981, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 4fd378929957f4665ba7e37ff26850a0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -113,7 +113,7 @@ Transform:
   m_GameObject: {fileID: 6707979902055832617}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.59, y: -2.74, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 0}
+  m_LocalScale: {x: 7.4099994, y: 2.9176877, z: 0}
   m_Children:
   - {fileID: 6707979901975138930}
   m_Father: {fileID: 0}
@@ -152,11 +152,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6707979902055832617}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 54dd88e5783820a4b847ffb157ea6270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audio: {fileID: 0}
+  MultipleOptions: 0
   PromptHeader: A
   DialoguePrompts:
   - Unlock: 0
@@ -164,8 +166,15 @@ MonoBehaviour:
     choicesID: 0
     DialogPrompt: A
     dialogue:
-    - SpeakerName: Porta
-      Sentence: '*Porta Noises*'
+    - SpeakerName: Tapete
+      Sentence: "Aah! Estamos aqui presentes em mais um dia na casa da fam\xEDlia
+        Rodrigues."
+    - SpeakerName: Tapete
+      Sentence: "Hoje vamos acompanhar nosso querido Enzo, uma crian\xE7a de 12 anos
+        que vive com sua m\xE3e Valentina. "
+    - SpeakerName: Tapete
+      Sentence: "Enzo \xE9 uma criatura de h\xE1bito e adora seguir uma rotina. Ele
+        sempre acorda antes do seu despertador come\xE7ar a tocar e desliga-o."
   canStartDialogAgain: 1
 --- !u!114 &6707979902055832612
 MonoBehaviour:
@@ -179,6 +188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 199478e0a98bbbc4a9dec5af5048845f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audio: {fileID: 0}
   ObjectoCondicional: {fileID: 0}
   PromptHeader: A
   DialoguePrompts:
@@ -187,8 +197,8 @@ MonoBehaviour:
     choicesID: 0
     DialogPrompt: A
     dialogue:
-    - SpeakerName: Porta
-      Sentence: A porta se recusa a abrir
+    - SpeakerName: Tapete
+      Sentence: Ah! Finalmente vamos descer!
   canStartDialogAgain: 1
 --- !u!114 &6707979902055832619
 MonoBehaviour:
@@ -246,11 +256,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6707979902055832617}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3b71dfa160907412cb9e68788a28300a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audio: {fileID: 0}
   ChoicesIDInObject: 0
   PromptHeader: Escolhas
   DialoguePrompts:
@@ -283,11 +294,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6707979902055832617}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3b71dfa160907412cb9e68788a28300a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audio: {fileID: 0}
   ChoicesIDInObject: 1
   PromptHeader: "O que voc\xEA vai fazer com isso?"
   DialoguePrompts:
